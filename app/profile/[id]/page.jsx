@@ -1,10 +1,7 @@
 import { notFound } from 'next/navigation'
 import users from '/data/users'
 
-
-
 export default async function ProfilePage({ params }) {
-  // desfazer a Promise (params pode ser uma Promise)
   const resolvedParams = await params
   const { id } = resolvedParams
 
@@ -12,9 +9,9 @@ export default async function ProfilePage({ params }) {
   if (!user) return notFound()
 
   return (
-    <main>
-      <a className="{css.back-link}" href="/">← Voltar</a>
-      <div className="profile-card">
+    <main className="container">
+      <a className="back-link" href="/">← Voltar</a>
+      <div className="card profile-card">
         <div className="profile-header">
           <div>
             <div className="profile-name">{user.name}</div>

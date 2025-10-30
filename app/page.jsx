@@ -14,20 +14,15 @@ export default function LoginPage(){
   }
 
   return (
-    <main>
-      <div className="login-card">
+    <main className="container">
+      <div className="card login-card">
         <h1>Entrar — Plataforma de Progresso</h1>
-        <form onSubmit={handleSubmit} style={{display:'grid',gap:12,marginTop:12}}>
+        <form onSubmit={handleSubmit} className="form-row">
           <label className="small">ID do aluno</label>
-          <input
-            className="input"
-            value={id}
-            onChange={e=>{setId(e.target.value); setError('')}}
-            placeholder="ex: agnes-de-queiroz-silva"
-          />
+          <input className="input" value={id} onChange={e=>{setId(e.target.value); setError('')}} placeholder="ex: agnes-de-queiroz-silva" />
           {error && <div style={{color:'crimson'}}>{error}</div>}
           <button className="btn" type="submit">Acessar</button>
-
+          <div className="small">Dica: use um id existente em <code>data/users.js</code></div>
         </form>
       </div>
     </main>
