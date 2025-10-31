@@ -29,7 +29,7 @@ const users = [
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
-      laco_repeticao: 70,
+      laco_repeticao: 100,
       funcao: 99,
       request: 100,
       banco: 99
