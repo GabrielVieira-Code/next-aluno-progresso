@@ -238,6 +238,18 @@ const users = [
       request: 40,
       banco: 0
     }
+  },
+  {
+    id: 'deyvid-willian',
+    name: 'VINICIUS DE SOUZA SILVA',
+    adherence: '100%',
+    skills: {
+      variaveis_condicionais: 100,
+      laco_repeticao: 80,
+      funcao: 80,
+      request: 90,
+      banco: 99
+    }
   }
 ]
 
