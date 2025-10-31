@@ -6,9 +6,9 @@ const users = [
     skills: {
       variaveis_condicionais: 100,
       laco_repeticao: 70,
-      funcao: 40,
-      request: 40,
-      banco: 0
+      funcao: 60,
+      request: 60,
+      banco: 80
     }
   },
   {
@@ -30,9 +30,9 @@ const users = [
     skills: {
       variaveis_condicionais: 100,
       laco_repeticao: 70,
-      funcao: 0,
+      funcao: 99,
       request: 100,
-      banco: 0
+      banco: 99
     }
   },
   {
@@ -42,9 +42,9 @@ const users = [
     skills: {
       variaveis_condicionais: 100,
       laco_repeticao: 70,
-      funcao: 0,
+      funcao: 70,
       request: 60,
-      banco: 0
+      banco: 99
     }
   },
   {
@@ -54,9 +54,9 @@ const users = [
     skills: {
       variaveis_condicionais: 65,
       laco_repeticao: 20,
-      funcao: 0,
+      funcao: 20,
       request: 30,
-      banco: 0
+      banco: 40
     }
   },
   {
@@ -150,9 +150,9 @@ const users = [
     skills: {
       variaveis_condicionais: 100,
       laco_repeticao: 70,
-      funcao: 0,
-      request: 100,
-      banco: 0
+      funcao: 80,
+      request: 80,
+      banco: 99
     }
   },
   {
@@ -186,9 +186,9 @@ const users = [
     skills: {
       variaveis_condicionais: 100,
       laco_repeticao: 70,
-      funcao: 0,
-      request: 30,
-      banco: 0
+      funcao: 60,
+      request: 80,
+      banco: 75
     }
   },
   {
