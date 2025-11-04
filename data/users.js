@@ -262,6 +262,18 @@ const users = [
       request: 90,
       banco: 99
     }
+  },
+  {
+    id: 'Sergio',
+    name: 'Sergiao mestre sagrado',
+    adherence: '100%',
+    skills: {
+      variaveis_condicionais: 100,
+      laco_repeticao: 70,
+      funcao: 75,
+      request: 90,
+      banco: 99
+    }
   }
 ]
 
