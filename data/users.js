@@ -250,6 +250,18 @@ const users = [
       request: 90,
       banco: 99
     }
+  },
+  {
+    id: 'YasmimA',
+    name: 'Yasmim topizeira',
+    adherence: '100%',
+    skills: {
+      variaveis_condicionais: 100,
+      laco_repeticao: 80,
+      funcao: 80,
+      request: 90,
+      banco: 99
+    }
   }
 ]
 
