@@ -192,15 +192,15 @@ const users = [
     }
   },
   {
-    id: 'murilo-santos-de-oliveira',
-    name: 'MURILO SANTOS DE OLIVEIRA',
+    id: 'murilo',
+    name: 'MURILO- Briga - coda - e anda de bike',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
-      laco_repeticao: 70,
-      funcao: 0,
-      request: 30,
-      banco: 0
+      laco_repeticao: 75,
+      funcao: 80,
+      request: 99,
+      banco: 99
     }
   },
   {
