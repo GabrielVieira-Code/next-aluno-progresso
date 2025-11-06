@@ -285,7 +285,7 @@ const users = [
       request: 80,
       banco: 85
     }
-  }
+  
 ]
 
 export default users
