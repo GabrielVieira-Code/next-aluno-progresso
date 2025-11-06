@@ -273,6 +273,17 @@ const users = [
       funcao: 75,
       request: 90,
       banco: 99
+    },
+    {
+    id: 'julia-marques',
+    name: 'Mestra Julia',
+    adherence: '100%',
+    skills: {
+      variaveis_condicionais: 100,
+      laco_repeticao: 70,
+      funcao: 70,
+      request: 80,
+      banco: 85
     }
   }
 ]
