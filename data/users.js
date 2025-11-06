@@ -193,7 +193,7 @@ const users = [
   },
   {
     id: 'murilo',
-    name: 'MURILO- Briga - coda - e anda de bike',
+    name: 'MURILO - Briga - Coda - e anda de bike',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -241,7 +241,7 @@ const users = [
   },
   {
     id: 'deyvid-willian',
-    name: 'VINICIUS DE SOUZA SILVA',
+    name: 'DEYVID WILLIAN',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -253,7 +253,7 @@ const users = [
   },
   {
     id: 'YasmimA',
-    name: 'Yasmim topizeira',
+    name: 'YASMIM TOPIZEIRA',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -265,7 +265,7 @@ const users = [
   },
   {
     id: 'Sergio',
-    name: 'Sergiao mestre sagrado',
+    name: 'SERGIÃO MESTRE SAGRADO',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -273,10 +273,11 @@ const users = [
       funcao: 75,
       request: 90,
       banco: 99
-    },
-    {
+    }
+  },
+  {
     id: 'julia-marques',
-    name: 'Mestra Julia',
+    name: 'MESTRA JULIA',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -285,7 +286,7 @@ const users = [
       request: 80,
       banco: 85
     }
-  
+  }
 ]
 
 export default users
