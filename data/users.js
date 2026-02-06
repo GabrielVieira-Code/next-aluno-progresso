@@ -6,7 +6,7 @@ const users = [
     skills: {
       variaveis_condicionais: 100,
       laco_repeticao: 70,
-      funcao: 60,
+      funcao: 20,
       request: 60,
       banco: 80
     }

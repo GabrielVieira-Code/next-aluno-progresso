@@ -1,6 +1,21 @@
 'use client'
 import { useState, useEffect } from 'react'
 
+/**
+ * Componente responsável pela interação do aluno
+ * com a trilha de estudo.
+ *
+ * Funcionalidades:
+ * - Permite escrever código ou resposta
+ * - Salva automaticamente no localStorage
+ * - Mantém o progresso local do aluno
+ *
+ * Este componente é Client-side por usar:
+ * - useState
+ * - useEffect
+ * - localStorage
+ */
+
 export default function TrackClient({ userId, skill }) {
   const storageKey = `${userId}-${skill}-submission`
   const [code, setCode] = useState('')

@@ -25,6 +25,7 @@ export default async function TrackPage({ params }) {
 
         <TrackClient userId={id} skill={skill} />
       </div>
+        <button>teste</button>
     </main>
   )
 }

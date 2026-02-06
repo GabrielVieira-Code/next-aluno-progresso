@@ -3,6 +3,19 @@ import users from '/data/users'
 import tracks from '/data/tracks'
 import TrackClient from './TrackClient'
 
+/**
+ * Página da trilha de estudo.
+ *
+ * Responsável por:
+ * - Validar existência do aluno
+ * - Validar existência da trilha
+ * - Exibir desafio proposto
+ *
+ * Esta página é um Server Component.
+ * Toda a interação do aluno é delegada
+ * ao componente TrackClient.
+ */
+
 export default async function TrackPage({ params }) {
   const resolved = await params
   const { id, skill } = resolved
@@ -25,6 +38,7 @@ export default async function TrackPage({ params }) {
 
         <TrackClient userId={id} skill={skill} />
       </div>
+      <button>teste</button>
     </main>
   )
 }

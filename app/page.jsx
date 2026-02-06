@@ -1,4 +1,16 @@
 'use client'
+
+/**
+ * Página inicial da plataforma.
+ *
+ * Permite que o aluno informe seu ID e seja redirecionado
+ * para a página de perfil correspondente.
+ *
+ * Responsabilidades:
+ * - Capturar o ID do aluno
+ * - Validar se o campo foi preenchido
+ * - Redirecionar para /profile/[id]
+ */
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 

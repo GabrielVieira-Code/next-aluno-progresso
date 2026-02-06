@@ -2,6 +2,20 @@ import { notFound } from 'next/navigation'
 import users from '/data/users'
 import tracks from '/data/tracks'
 
+/**
+ * Página de perfil do aluno.
+ *
+ * Exibe:
+ * - Nome e ID do aluno
+ * - Índice de aderência
+ * - Percentual de habilidades
+ * - Trilhas extras liberadas automaticamente
+ *
+ * Regras de negócio:
+ * - Se o aluno não existir → 404
+ * - Habilidades com valor <= 50 liberam trilhas de estudo
+ */
+
 export default async function ProfilePage({ params }) {
   const resolvedParams = await params
   const { id } = resolvedParams
@@ -55,10 +69,16 @@ export default async function ProfilePage({ params }) {
             ))}
         </div>
       </div>
+      <button>teste</button>
     </main>
   )
 }
-
+/**
+ * Define o nome legível de uma habilidade a partir da chave.
+ *
+ * Exemplo:
+ * "logica_programacao" → "Logica Programacao"
+ */
 function formatSkillName(key) {
   return key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
 }
