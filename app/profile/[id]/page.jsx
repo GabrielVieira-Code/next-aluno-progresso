@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
-import users from '/data/users'
-import tracks from '/data/tracks'
+import users from '../../../data/users'
+import tracks from '@/data/tracks'
+import { SKILL_THRESHOLD } from '@/data/constants'
 
 /**
  * Página de perfil do aluno.
@@ -13,7 +14,7 @@ import tracks from '/data/tracks'
  *
  * Regras de negócio:
  * - Se o aluno não existir → 404
- * - Habilidades com valor <= 50 liberam trilhas de estudo
+ * - Habilidades com valor <= SKILL_THRESHOLD liberam trilhas de estudo
  */
 
 export default async function ProfilePage({ params }) {
@@ -22,6 +23,8 @@ export default async function ProfilePage({ params }) {
 
   const user = users.find(u => u.id === id)
   if (!user) return notFound()
+
+  const weakSkills = Object.entries(user.skills).filter(([, val]) => val <= SKILL_THRESHOLD)
 
   return (
     <main className="container">
@@ -52,32 +55,36 @@ export default async function ProfilePage({ params }) {
 
         <div className="tracks">
           <h3>Trilhas de estudo</h3>
-          {/* Define threshold: skills with value <= 50 liberam trilha */}
-          {Object.entries(user.skills).filter(([, val]) => val <= 50).length === 0 && (
-            <div className="small">Nenhuma trilha disponível — todas as habilidades estão acima do limite.</div>
+          {weakSkills.length === 0 && (
+            <div className="small">
+              Nenhuma trilha disponível — todas as habilidades estão acima do limite.
+            </div>
           )}
-          {Object.entries(user.skills)
-            .filter(([, val]) => val <= 50)
-            .map(([key, val]) => (
-              <div className="track-card" key={key}>
-                <div className="track-info">
-                  <div className="track-title">{tracks[key]?.title ?? formatSkillName(key)}</div>
-                  <div className="small">Progresso: {val}% — Clique para abrir a trilha</div>
+          {weakSkills.map(([key, val]) => (
+            <div className="track-card" key={key}>
+              <div className="track-info">
+                <div className="track-title">{tracks[key]?.title ?? formatSkillName(key)}</div>
+                <div className="small">
+                  Progresso: {val}% — Clique para abrir a trilha
                 </div>
-                <a className="btn" href={`/profile/${encodeURIComponent(user.id)}/track/${encodeURIComponent(key)}`}>Abrir</a>
               </div>
-            ))}
+              <a
+                className="btn"
+                href={`/profile/${encodeURIComponent(user.id)}/track/${encodeURIComponent(key)}`}
+              >
+                Abrir
+              </a>
+            </div>
+          ))}
         </div>
       </div>
-      <button>teste</button>
     </main>
   )
 }
+
 /**
- * Define o nome legível de uma habilidade a partir da chave.
- *
- * Exemplo:
- * "logica_programacao" → "Logica Programacao"
+ * Formata o nome legível de uma habilidade a partir da chave.
+ * Exemplo: "laco_repeticao" → "Laco Repeticao"
  */
 function formatSkillName(key) {
   return key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())

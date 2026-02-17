@@ -1,19 +1,20 @@
+/** @type {import('./types').User[]} */
 const users = [
   {
     id: 'agnes-de-queiroz-silva',
-    name: 'AGNES DE QUEIROZ SILVA',
+    name: 'Agnes de Queiroz Silva',
     adherence: '100%',
     skills: {
-      variaveis_condicionais: 100,
-      laco_repeticao: 70,
+      variaveis_condicionais: 10,
+      laco_repeticao: 10,
       funcao: 20,
-      request: 60,
-      banco: 80
+      request: 10,
+      banco: 10
     }
   },
   {
     id: 'ana-julia-silva-moreno',
-    name: 'ANA JULIA SILVA MORENO',
+    name: 'Ana Julia Silva Moreno',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -25,19 +26,19 @@ const users = [
   },
   {
     id: 'artur-antonini-miziara-de-oliveira',
-    name: 'ARTUR ANTONINI MIZIARA DE OLIVEIRA',
+    name: 'Artur Antonini Miziara de Oliveira',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
       laco_repeticao: 100,
       funcao: 99,
-      request: 100,
-      banco: 99
+      request: 10,
+      banco: 10
     }
   },
   {
     id: 'beatriz-moraes-amorim',
-    name: 'BEATRIZ MORAES AMORIM',
+    name: 'Beatriz Moraes Amorim',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -49,7 +50,7 @@ const users = [
   },
   {
     id: 'geovanna-ribeiro-de-souza',
-    name: 'GEOVANNA RIBEIRO DE SOUZA',
+    name: 'Geovanna Ribeiro de Souza',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 65,
@@ -61,7 +62,7 @@ const users = [
   },
   {
     id: 'guilherme-souza-oliveira',
-    name: 'GUILHERME SOUZA OLIVEIRA',
+    name: 'Guilherme Souza Oliveira',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -73,7 +74,7 @@ const users = [
   },
   {
     id: 'gustavo-silva-menezes',
-    name: 'GUSTAVO SILVA MENEZES',
+    name: 'Gustavo Silva Menezes',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -85,7 +86,7 @@ const users = [
   },
   {
     id: 'henrique-mattos-rodrigues',
-    name: 'HENRIQUE MATTOS RODRIGUES',
+    name: 'Henrique Mattos Rodrigues',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -97,7 +98,7 @@ const users = [
   },
   {
     id: 'ian-benevenuto-garcia',
-    name: 'IAN BENEVENUTO GARCIA',
+    name: 'Ian Benevenuto Garcia',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 65,
@@ -109,7 +110,7 @@ const users = [
   },
   {
     id: 'isabely-goncalves-de-almeida',
-    name: 'ISABELY GONÇALVES DE ALMEIDA',
+    name: 'Isabely Gonçalves de Almeida',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -121,7 +122,7 @@ const users = [
   },
   {
     id: 'julia-maria-dos-santos',
-    name: 'JULIA MARIA DOS SANTOS',
+    name: 'Julia Maria dos Santos',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -133,7 +134,7 @@ const users = [
   },
   {
     id: 'kaua-dias-de-souza',
-    name: 'KAUÃ DIAS DE SOUZA',
+    name: 'Kauã Dias de Souza',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 65,
@@ -145,7 +146,7 @@ const users = [
   },
   {
     id: 'laura-damasceno-machado',
-    name: 'LAURA DAMASCENO MACHADO',
+    name: 'Laura Damasceno Machado',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -157,7 +158,7 @@ const users = [
   },
   {
     id: 'luiza-cardoso-da-silva',
-    name: 'LUIZA CARDOSO DA SILVA',
+    name: 'Luiza Cardoso da Silva',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 65,
@@ -169,7 +170,7 @@ const users = [
   },
   {
     id: 'maria-luiza-de-oliveira',
-    name: 'MARIA LUIZA DE OLIVEIRA',
+    name: 'Maria Luiza de Oliveira',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 65,
@@ -181,7 +182,7 @@ const users = [
   },
   {
     id: 'maria-vitoria-lopes-da-silva',
-    name: 'MARIA VITÓRIA LOPES DA SILVA',
+    name: 'Maria Vitória Lopes da Silva',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -193,7 +194,7 @@ const users = [
   },
   {
     id: 'murilo',
-    name: 'MURILO - Briga - Coda - e anda de bike',
+    name: 'Murilo - Briga - Coda - e anda de bike',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -205,7 +206,7 @@ const users = [
   },
   {
     id: 'raissa-pereira-silva',
-    name: 'RAISSA PEREIRA SILVA',
+    name: 'Raissa Pereira Silva',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 65,
@@ -217,7 +218,7 @@ const users = [
   },
   {
     id: 'sophia-de-melo-barbosa',
-    name: 'SOPHIA DE MELO BARBOSA',
+    name: 'Sophia de Melo Barbosa',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 65,
@@ -229,7 +230,7 @@ const users = [
   },
   {
     id: 'vinicius-de-souza-silva',
-    name: 'VINICIUS DE SOUZA SILVA',
+    name: 'Vinicius de Souza Silva',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -241,7 +242,7 @@ const users = [
   },
   {
     id: 'deyvid-willian',
-    name: 'DEYVID WILLIAN',
+    name: 'Deyvid Willian',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -252,8 +253,9 @@ const users = [
     }
   },
   {
-    id: 'YasmimA',
-    name: 'YASMIM TOPIZEIRA',
+    // era 'YasmimA' — padronizado para kebab-case
+    id: 'yasmim-topizeira',
+    name: 'Yasmim Topizeira',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -264,8 +266,9 @@ const users = [
     }
   },
   {
-    id: 'Sergio',
-    name: 'SERGIÃO MESTRE SAGRADO',
+    // era 'Sergio' — padronizado para kebab-case
+    id: 'sergiao-mestre-sagrado',
+    name: 'Sergião Mestre Sagrado',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
@@ -277,7 +280,7 @@ const users = [
   },
   {
     id: 'julia-marques',
-    name: 'MESTRA JULIA',
+    name: 'Mestra Julia',
     adherence: '100%',
     skills: {
       variaveis_condicionais: 100,
