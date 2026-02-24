@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
-import users from '../../../../../data/users'
-import tracks from '../../../../../data/tracks'
+import users from '@/data/users'
+import tracks from '@/data/tracks'
+
 import TrackClient from '@/components/TrackClient'
 
 /**

@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
-import users from '../../../data/users'
+import users from '@/data/users'
+
 import tracks from '@/data/tracks'
 import { SKILL_THRESHOLD } from '@/data/constants'
 

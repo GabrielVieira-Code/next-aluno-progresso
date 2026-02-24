@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
-import users from '../../../../../data/users'
-import tracks from '../../../../../data/tracks'
-import TrackClient from '../TrackClient'
+import users from '@/data/users'
+import tracks from '@/data/tracks'
+import TrackClient from '@/components/TrackClient'
 
 export default async function TrackPage({ params }) {
   const resolved = await params
