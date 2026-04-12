@@ -23,7 +23,7 @@ export default async function TrackPage({ params }) {
         <h3>Desafio</h3>
         <p><code>{track.challenge}</code></p>
 
-        <TrackClient userId={id} skill={skill} />
+        <TrackClient userId={id} skill={skill} titulo={track.title} pergunta={track.challenge} />
       </div>
     </main>
   )
